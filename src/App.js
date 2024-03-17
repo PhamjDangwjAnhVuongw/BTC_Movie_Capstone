@@ -1,12 +1,8 @@
-import { TimePicker } from "antd";
-import dayjs from "dayjs";
+import useRoutesCustom from "./routes/useRoutesCustom";
 
 function App() {
-  return (
-    <>
-      <TimePicker defaultOpenValue={dayjs("00:00:00", "HH:mm:ss")} />
-    </>
-  );
+  const routes = useRoutesCustom();
+  return routes;
 }
 
 export default App;
