@@ -14,6 +14,7 @@ const InputCustom = ({
   error,
   touched,
   readOnly,
+  type = "text", //Default parameter
 }) => {
   //id sẽ khác nhau giữa các input
   return (
@@ -30,7 +31,7 @@ const InputCustom = ({
             onBlur={onBlur}
             value={value}
             onChange={onChange}
-            type="text"
+            type={type}
             name={name}
             readOnly={readOnly ? true : false}
             id={id}

@@ -45,3 +45,10 @@
   npm i formik yup
 
 \*Kiến thức: Học thêm các utinity class
+
+# Các chức năng bổ sung:
+
+1. hiển thị con mắt hiện ra mật khẩu ở ô password
+2. Kham khảo các layout đẹp để bổ sung vào dự án
+3. Nhập ngày chiếu: Không được chọn ngày cũ mà chỉ có thể chọn từ ngày hôm nay trở đi
+4. Thông báo lỗi khi upload hình ảnh quá 1mb

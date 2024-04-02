@@ -1,18 +1,38 @@
 .carousel_banner {
+    .banner {
+        height: 110vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
     .slick-next {
-        background-color: red;
-        color: white;
-        font-size: 16px;
-        right: 30px;
+        color: #9e9e9e;
+        font-size: 50px;
+        right: 50px;
+        &:hover {
+            color: lightgrey;
+            font-size: 50px;
+            right: 40px;
+        }
         &::before {
             display: none;
         }
     }
     .slick-prev {
-        color: white;
-        font-size: 16px;
-        left: 30px;
+        color: #9e9e9e;
+        font-size: 50px;
+        left: 50px;
         z-index: 2;
+        &:hover {
+            color: lightgrey;
+            font-size: 50px;
+            left: 40px;
+        }
         &::before {
             display: none;
         }

@@ -1,23 +1,21 @@
 import React, { useEffect, useState } from "react";
 import { quanLyPhimServ } from "../../services/quanLyPhim";
+import { useDispatch, useSelector } from "react-redux";
+import { getAllMovieThunk, handleAllMovie } from "../../redux/slice/phimSlice";
 
 const ListMovie = () => {
-  const [arrMovie, setArrMovie] = useState([]);
+  // const [arrMovie, setArrMovie] = useState([]);
+  //Có thể coi tham số state đại diện cho object reducer có ở store
+  const { arrMovie } = useSelector((state) => state.phimSlice);
+  const dispatch = useDispatch();
+  console.log(arrMovie);
 
   useEffect(() => {
-    quanLyPhimServ
-      .getAllMovie()
-      .then((res) => {
-        console.log(res);
-        setArrMovie(res.data.content);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    dispatch(getAllMovieThunk());
   }, []);
 
   return (
-    <div className="grid grid-cols-4 gap-10">
+    <div className="mt-10 grid grid-cols-4 gap-10">
       {arrMovie.map((movie, index) => {
         return (
           <div className="movie_item space-y-4">
