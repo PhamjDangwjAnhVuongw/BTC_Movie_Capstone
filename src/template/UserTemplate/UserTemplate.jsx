@@ -24,7 +24,7 @@ const UserTemplate = () => {
       <ToastContainer theme="dark" />
     </NotifyContext.Provider>
   ) : (
-    <div>Tôi đang ở tablet </div>
+    <div>Tablet </div>
   );
 };
 

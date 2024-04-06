@@ -15,10 +15,10 @@ const ListMovie = () => {
   }, []);
 
   return (
-    <div className="mt-10 grid grid-cols-4 gap-10">
+    <div className="mt-10 grid grid-cols-4 gap-8">
       {arrMovie.map((movie, index) => {
         return (
-          <div className="movie_item space-y-4">
+          <div className="container movie_item space-y-4">
             <img
               className="w-full h-96 object-cover rounded"
               src={movie.hinhAnh}

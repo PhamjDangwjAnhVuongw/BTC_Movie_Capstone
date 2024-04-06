@@ -7,7 +7,7 @@ const Header = () => {
   console.log(userLocal);
   return (
     <header>
-      <nav className="bg-white border-gray-200 px-4 lg:px-6 py-3">
+      <nav className="bg-white border-gray-200 px-4 lg:px-6 py-3 bg-opacity-95 shadow-xl fixed w-full z-10">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <a href="#logo" className="flex items-center">
             <img src={logo} className="mr-3 h-6 sm:h-9" alt="Cybersoft Logo" />
@@ -21,7 +21,7 @@ const Header = () => {
             ) : (
               <NavLink
                 to="/sign-in"
-                className="text-gray-800 hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
+                className="text-gray-800 hover:text-red-500 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-xl px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
               >
                 Đăng nhập
               </NavLink>

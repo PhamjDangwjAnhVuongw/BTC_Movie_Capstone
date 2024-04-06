@@ -6,7 +6,7 @@ export const quanLyPhimServ = {
   },
 
   getAllMovie: () => {
-    return http.get("/QuanLyPhim/LayDanhSachPhim?maNhom=GP01");
+    return http.get("/QuanLyPhim/LayDanhSachPhim?maNhom=GP03");
   },
   themPhimUploadHinh: (data) => {
     return http.post("/QuanLyPhim/ThemPhimUploadHinh", data);

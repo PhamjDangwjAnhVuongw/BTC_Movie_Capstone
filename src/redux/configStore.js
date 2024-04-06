@@ -6,8 +6,5 @@ export const store = configureStore({
   reducer: {
     phimSlice,
     loadingSlice,
-    // hoTen: () => {
-    //   return "Cybersoft";
-    // },
   },
 });

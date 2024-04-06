@@ -57,7 +57,7 @@ const Showtimes = ({ theater }) => {
                               .map((gioChieu, index) => {
                                 return (
                                   <div>
-                                    <p className="space-x-3">
+                                    <p className="space-x-3 box-border">
                                       {/* Ngày tháng */}
                                       <span>{moment().format("DD-MM-YY")}</span>
 
